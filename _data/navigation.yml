@@ -2,6 +2,8 @@
   link: /
 - name: Blog
   link: /blog.html
+- name: Tools
+  link: /tools.html
 - name: Authors
   link: /authors.html
 - name: About

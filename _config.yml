@@ -1,6 +1,8 @@
 collections:
   authors:
     output: true
+  tools:
+    output: true
     
 defaults:
   - scope:
@@ -8,6 +10,11 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: "tool"
   - scope:
       path: ""
       type: "posts"
