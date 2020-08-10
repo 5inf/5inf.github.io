@@ -1,0 +1,113 @@
+body {
+  padding-bottom:3em;
+  padding-top:4em;
+  FONT: 11px Verdana, Sans-Serif; BACKGROUND: black; COLOR: #303030
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer p{
+	text-align:center;
+}
+	
+
+img.logoimage {
+  max-width:3em;
+  max-height:3em;
+  padding:1em;
+}
+
+img.mainlogo {
+  max-width:6em;
+  max-height:6em;
+  padding:.5em;
+}
+
+.centered {
+  TEXT-ALIGN: center;
+  ALIGN: center;
+}
+
+.current {
+  color:white;
+}
+
+
+
+@media (min-width: 35em)  { 
+  nav {
+    float: left;
+    width: 15em;
+  }
+  main {
+	min-width: 20em; 
+    margin-left: 15em;
+  }	
+  aside {
+    float: right;
+    width: 12em;
+  }  
+}
+@media (min-width: 45em)  {	
+  article {
+    margin-right: 15em;
+  }
+}
+
+a:link {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.infoFrameVisible {
+	BORDER-BOTTOM: #999 2px solid; POSITION: relative; BORDER-LEFT: #999 2px solid; WIDTH: 50%; 
+MARGIN-BOTTOM: 6px; BACKGROUND: black; FLOAT: left; HEIGHT: 20px; COLOR: white; BORDER-TOP: #999 2px solid; TOP: 
+3px; MARGIN-RIGHT: 6px; BORDER-RIGHT: #999 2px solid; LEFT: 3px;
+	background-repeat: no-repeat; background-position: center; background-size:contain;
+	TEXT-ALIGN: center;
+}
+.infoFrameHidden {
+	BORDER: black 2px solid; POSITION: relative; WIDTH: 50%; MARGIN-BOTTOM: 6px; BACKGROUND: black; FLOAT: 
+left; HEIGHT: 20px; COLOR: black; TOP: 3px; MARGIN-RIGHT: 6px; LEFT: 3px;
+	background-repeat: no-repeat; background-position: center; background-size:contain;
+	TEXT-ALIGN: center;
+}
+
+.formfield{
+	BORDER: black 2px solid; WIDTH: 30%; MARGIN-BOTTOM: 6px; BACKGROUND: black; HEIGHT: 20px; COLOR: white; 
+TOP: 3px; MARGIN-RIGHT: 6px; LEFT: 3px;}
+.formlabel{
+	BORDER: black 2px solid; WIDTH: 30%; MARGIN-BOTTOM: 6px; BACKGROUND: black; HEIGHT: 20px; COLOR: white; 
+TOP: 3px; MARGIN-RIGHT: 6px; LEFT: 3px; TEXT-ALIGN: right;}

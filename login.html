@@ -1,0 +1,52 @@
+---
+layout: default
+title: Login
+---
+<SCRIPT language="JavaScript">
+var debug=false;
+
+function updateDisplay(){
+	if(infoFrameVisible){
+		document.getElementById("bar6").className="infoFrameVisible";
+	}else{
+		document.getElementById("bar6").className="infoFrameHidden";
+	}
+}
+
+function showInfoFrame(){
+	infoFrameVisible=true;
+	updateDisplay();
+        window.setTimeout('hideInfoFrame()',3000);
+}
+
+function hideInfoFrame(){
+	infoFrameVisible=false;
+	updateDisplay();
+}
+
+document.onkeyup=function keyUpHandler(e){
+	switch(e.keyCode){
+		case 13: {showInfoFrame();break;}//left
+		default : {if(debug){alert(e.keyCode+" "+e.key)};break;}
+	}
+
+}
+</script>
+
+<article> 
+<section>
+<h1 class="centered">five above infinity<br> <img class="mainlogo" src="/assets/images/5ai.png"></h1> </section> 
+<section>
+<form style="width:50%; margin: 0 auto">
+ <label for="user">user:</label> <input class=formfield id="user" type=text></input><br/>
+ <label for="pass">pass:</label> <input class=formfield id="pass" type=password></input>
+ </form>
+ <DIV id="bar6" class=infoFrameHidden onclick="toggleInfoFrame()"> Access denied: wrong username or password
+ </DIV>
+</section>
+</article>
+
+
+
+
+

@@ -1,0 +1,29 @@
+---
+title: five above infitiy
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page.title}}</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" sizes="any">
+<STYLE type=text/css media=all>
+@import url( /assets/css/styles.css );
+</STYLE>
+</HEAD>
+<BODY>
+<header>
+<a href="/index.html"><img class="logoimage" src="/assets/images/5ai.png" alt="logo"></a>
+</header>
+{% include navigation.html %}
+<main>
+{{content}}
+</main>
+<footer>
+<p>
+<a href="http://fiveaboveinfinity.com/">five above infinity</a> &#151 <a href="https://github.com/5inf">[5inf]</a> &#151; <a href="https://holger-moessinger.de/">[H</a><a href="https://github.com/hm2dev">M]</a> &#151; 2018&ndash;{{ 'now' | date: "%Y" }} &#151; updated {{ site.time }}
+</p>
+</footer>
+</body>
+</html>
