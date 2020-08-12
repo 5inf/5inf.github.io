@@ -24,6 +24,8 @@ defaults:
       path: ""
     values:
       layout: "default"
-      
+
+excerpt_separator: <!--more-->
+    
 # Pagination Settings
 paginate: 3
