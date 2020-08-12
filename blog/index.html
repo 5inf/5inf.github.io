@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Blog
+paginate: 1
+paginate_path: "/blog/page:num/"
 ---
 <h1> Latest posts</h1>
 
@@ -18,3 +20,16 @@ title: Blog
   </li>
   {% endfor %}
 </ul>
+
+paginator.page{{paginator.page}}<br/>
+paginator.per_page{{paginator.per_page}}<br/>
+paginator.posts{{paginator.posts}}<br/>
+paginator.total_posts{{paginator.total_posts}}<br/>
+paginator.total_pages{{paginator.total_pages}}<br/>
+
+  {% if paginator.previous_page %}
+     <a href="{{ paginator.previous_page_path }}">previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">next</a>
+  {% endif %}
