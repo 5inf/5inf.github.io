@@ -2,8 +2,8 @@
 layout: post
 author: HM
 ---
-Hello World 2!
+Hello World 3!
 
-This is the second post on the new site.
+This is the third post on the new site.
 There shall be more in the near future.
    
