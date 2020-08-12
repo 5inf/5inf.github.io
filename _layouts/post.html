@@ -16,10 +16,10 @@ excerpt_separator: <!--more-->
 
 
   {% if page.previous %}
-    - <a href="{{ page.previous }}">previous</a>
+     <a href="{{ page.previous.url }}">previous</a>
   {% endif %}
   {% if page.next %}
-    - <a href="{{ page.next }}">next</a>
+    - <a href="{{ page.next.url }}">next</a>
   {% endif %}
   
 
