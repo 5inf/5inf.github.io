@@ -26,11 +26,4 @@ defaults:
       layout: "default"
       
 # Pagination Settings
-pagination:
-  enabled: true
-  per_page: 3
-  offset: 2
-  title: ':title - page :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+paginate: 3
