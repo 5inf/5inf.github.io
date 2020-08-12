@@ -33,7 +33,7 @@ pagination: 3
     <span class="previous">Previous</span>
   {% endif %}
   <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}. Posts {{paginator.per_page * paginator.page }} to {{ (paginator.per_page +1 )* paginator.page }} of a total of {{paginator.total_posts}} posts.
+    - Page: {{ paginator.page }} of {{ paginator.total_pages }}. Posts {{paginator.per_page * paginator.page }} to {{ max( (paginator.per_page + 1 )* paginator.page, paginator.total_posts)}} of a total of {{paginator.total_posts}} posts. -
   </span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
@@ -42,8 +42,5 @@ pagination: 3
   {% endif %}
 </div>
 
-paginator.per_page{{paginator.per_page}}<br/>
-paginator.total_posts{{paginator.total_posts}}<br/>
-paginator.total_pages{{paginator.total_pages}}<br/>
 
 
